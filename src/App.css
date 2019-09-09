@@ -134,7 +134,7 @@
 
 .reset-button {
   border-radius: 5px;
-  margin: 0 354px;
+  margin: 0 342px;
   width: 150px;
   height: 57px;
   font-size: 20px;
@@ -144,3 +144,14 @@
   text-shadow: 1px 1px black;
 }
 
+.score-update {
+  border: 2px solid black;
+  text-align: center;
+  margin-bottom: 20px;
+    height: 30px;
+    padding-top: 7px;
+    background-color: #9AA334;
+    font-size: 20px;
+    text-shadow: 1px 1px black;
+    font-weight: bolder;
+}

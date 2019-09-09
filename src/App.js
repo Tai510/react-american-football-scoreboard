@@ -7,13 +7,30 @@ function App() {
   //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
   const [homeCount , setHomeCount] = useState(0);
   const [awayCount , setAwayCount] = useState(0);
+
+  const [home , setHome] = useState('Home Team is up')
+  const [away , setAway] = useState('Away Team is up')
+  const [tie , setTie] = useState('The Game is Tied!')
+
+  const scoreUpdate = () => {
+    if(homeCount > awayCount) {
+      return home
+    } else if(homeCount - awayCount === 0) {
+      return tie
+    } else {
+      return away
+    }
+  }
+
   
   // const [count , setCount] = useState(0);
   return (
     <div className="container">
       <section className="scoreboard">
-      
-        <button onClick={() => setHomeCount(0) || setAwayCount(0)} className='reset-button'>Reset Score</button>
+        <div className='score-update'>
+          <p> {scoreUpdate(setHome , setAway , setTie)} {/* is up by {homeCount - awayCount && awayCount - homeCount} points */}</p>
+        </div>
+        <button onClick={() => setHomeCount(0) || setAwayCount(0)} className='reset-button'>Reset</button>
 
         <div className="topRow">
           <div className="home">
