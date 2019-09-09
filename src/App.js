@@ -12,6 +12,9 @@ function App() {
   return (
     <div className="container">
       <section className="scoreboard">
+      
+        <button onClick={() => setHomeCount(0) || setAwayCount(0)} className='reset-button'>Reset Score</button>
+
         <div className="topRow">
           <div className="home">
             <h2 className="home__name">Lions</h2>
