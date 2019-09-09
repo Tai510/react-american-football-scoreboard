@@ -114,11 +114,11 @@
   justify-content: space-around;
   border: 5px solid grey;
   width: 90%;
-  /* margin: 10rem auto; */
   height: 130px;
   padding-top: 25px;
   background-color: #D0C78A;
   margin-top: 0;
+  border-radius: 5px;
 }
 
 .homeButtons__touchdown,
@@ -133,12 +133,14 @@
 }
 
 .reset-button {
-  border-radius: 5rem;
+  border-radius: 5px;
   margin: 0 354px;
   width: 150px;
   height: 57px;
-  font-size: 18px;
+  font-size: 20px;
   border: 2px solid gray;
   margin-bottom: 27px;
+  background-color: #FC0808;
+  text-shadow: 1px 1px black;
 }
 
