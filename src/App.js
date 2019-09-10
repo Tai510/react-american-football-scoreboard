@@ -46,7 +46,7 @@ function App() {
             <div className="away__score">{awayCount}</div>
           </div>
         </div>
-        <BottomRow />
+        <BottomRow/>
       </section>
       <section className="buttons">
         <div className="homeButtons">

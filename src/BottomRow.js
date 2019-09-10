@@ -7,12 +7,13 @@ const BottomRow = () => {
 
   const [downs, setDowns] = useState(1);
   const [yards, setYards] = useState(10);
-  const [ballOn1, setBallOn1] = useState(0);
+  const [ballOn1, setBallOn1] = useState(20);
   const [ballOn2, setBallOn2] = useState(0);
   const [quarters, setQuarters] = useState(1);
 
 
   return (
+<div>
     <div className="bottomRow">
 
       <div className="down">
@@ -35,12 +36,12 @@ const BottomRow = () => {
 
       <div className="ballOn">
         <h3 className="ballOn__title">Ball on</h3>
-        <div className="ballOn__value">{ballOn1}{ballOn2}</div>
+        <div className="ballOn__value">{ballOn1}</div>
         <div>
             <button onClick={() => setBallOn1(ballOn1 + 1)}>+</button>
             <button onClick={() => setBallOn1(ballOn1 - 1)}>-</button>
-            <button onClick={() => setBallOn2(ballOn2 + 1)}>+</button>
-            <button onClick={() => setBallOn2(ballOn2 - 1)}>-</button>
+            {/* <button onClick={() => setBallOn2(ballOn2 + 1)}>+</button>
+            <button onClick={() => setBallOn2(ballOn2 - 1)}>-</button> */}
         </div>
       </div>
 
@@ -52,8 +53,13 @@ const BottomRow = () => {
             <button onClick={() => setQuarters(quarters - 1)}>-</button>
         </div>
       </div>
-      
+           
     </div>
+
+    <div>
+    <button  onClick={() => setDowns(1) || setYards(10) || setBallOn1(0) || setBallOn2(0) || setQuarters(1) } id='reset-button'>Reset</button>
+    </div>
+</div>  
    
   );
 };
