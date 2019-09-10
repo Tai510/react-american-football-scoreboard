@@ -145,7 +145,7 @@
   text-shadow: 1px 1px black;
 }
 
-#reset-button {
+/* #reset-button {
   border-radius: 5px;
   margin: 30px 353px;
   width: 150px;
@@ -155,7 +155,7 @@
   margin-bottom: 27px;
   background-color: #FC0808;
   text-shadow: 1px 1px black;
-}
+} */
 
 .score-update {
   border: 2px solid black;
@@ -167,4 +167,23 @@
     font-size: 20px;
     text-shadow: 1px 1px black;
     font-weight: bolder;
+}
+
+.reset-br {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.reset-br button {
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+#bottom-reset1 {
+  background-color: #458092;
+}
+
+#bottom-reset2 {
+  background-color: #FC0808;
 }

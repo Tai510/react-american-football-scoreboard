@@ -56,8 +56,9 @@ const BottomRow = () => {
            
     </div>
 
-    <div>
-    <button  onClick={() => setDowns(1) || setYards(10) || setBallOn1(0) || setBallOn2(0) || setQuarters(1) } id='reset-button'>Reset</button>
+    <div className='reset-br'>
+    <button id='bottom-reset1' onClick={() => setDowns(1) || setYards(10)} >Fresh Downs</button>
+    <button id='bottom-reset2'  onClick={() => setBallOn1(20) || setQuarters(1) }>Reset</button>
     </div>
 </div>  
    
